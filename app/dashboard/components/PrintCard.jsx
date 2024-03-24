@@ -147,12 +147,9 @@ const PrintCard = ({ print, setListLoader }) => {
                   className="bg-customRose"
                   onClick={() => {
                     setListLoader(true);
-                    deleteItem(
-                      "https://mindess-git-main-badgersdevs-projects.vercel.app/api/prints",
-                      {
-                        id: print.id,
-                      }
-                    );
+                    deleteItem("https://mindess.vercel.app/api/prints", {
+                      id: print.id,
+                    });
                     setTimeout(() => {
                       toast({
                         title: (

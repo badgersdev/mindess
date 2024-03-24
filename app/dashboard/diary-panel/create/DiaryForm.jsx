@@ -58,7 +58,7 @@ const DiaryForm = ({ todayEntries, error }) => {
 
     const { json } = await SaveItem(
       diaryEntry,
-      "https://mindess-git-main-badgersdevs-projects.vercel.app/api/diary"
+      "https://mindess.vercel.app/api/diary"
     );
 
     if (json.error) {

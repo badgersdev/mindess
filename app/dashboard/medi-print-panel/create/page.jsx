@@ -77,7 +77,7 @@ const Create = () => {
 
     const { json } = await SaveItem(
       print,
-      `https://mindess-git-main-badgersdevs-projects.vercel.app/api/prints`
+      "https://mindess.vercel.app/api/prints"
     );
 
     if (json.error) {

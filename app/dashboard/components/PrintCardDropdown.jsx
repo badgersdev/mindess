@@ -70,13 +70,10 @@ const PrintCardDropdown = ({ print }) => {
           <DropdownMenuItem
             className="cursor-pointer"
             onClick={() => {
-              addFavourite(
-                "https://mindess-git-main-badgersdevs-projects.vercel.app/api/prints",
-                {
-                  id: print.id,
-                  isFav: print.isFavourite,
-                }
-              );
+              addFavourite("https://mindess.vercel.app/api/prints", {
+                id: print.id,
+                isFav: print.isFavourite,
+              });
               toast({
                 title: print.isFavourite ? (
                   <div className="flex flex-row gap-2">
@@ -133,12 +130,9 @@ const PrintCardDropdown = ({ print }) => {
           <AlertDialogAction
             className="bg-customRose"
             onClick={() => {
-              deleteItem(
-                "https://mindess-git-main-badgersdevs-projects.vercel.app/api/prints",
-                {
-                  id: print.id,
-                }
-              );
+              deleteItem("https://mindess.vercel.app/api/prints", {
+                id: print.id,
+              });
             }}
           >
             Delete

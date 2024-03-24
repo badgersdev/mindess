@@ -128,7 +128,7 @@ const DiaryCard = ({ entry, setListLoader }) => {
                   className="bg-customRose"
                   onClick={() => {
                     setListLoader(true);
-                    deleteItem("http://localhost:3000/api/diary", {
+                    deleteItem("https://mindess.vercel.app/api/diary", {
                       id: entry.id,
                     });
                     setTimeout(() => {

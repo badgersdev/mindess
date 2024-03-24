@@ -45,13 +45,10 @@ const ListActions = ({ data }) => {
           >
             <DropdownMenuItem
               onClick={() => {
-                addFavourite(
-                  "https://mindess-git-main-badgersdevs-projects.vercel.app/api/prints",
-                  {
-                    id: data.original.id,
-                    isFav: data.original.isFavourite,
-                  }
-                );
+                addFavourite("https://mindess.vercel.app/api/prints", {
+                  id: data.original.id,
+                  isFav: data.original.isFavourite,
+                });
                 toast({
                   title: data.original.isFavourite
                     ? "Session has been REMOVED from favourites"

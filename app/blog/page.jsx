@@ -1,5 +1,5 @@
 const Blog = () => {
-  return <div>Blog Page</div>;
+  return <div>Ups! We are not done yet :) coming soon ? Maybe!</div>;
 };
 
 export default Blog;
